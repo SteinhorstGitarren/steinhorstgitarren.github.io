@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parlormodell</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!-- The overlay -->
+    <div id="myA" class="overlay">
+        <button class="closebtn" onclick="closeA()">&times;</button>
+        <img class="overlay-content" src="slideshow_stahl/stahl_front.jpg">
+      </div> 
+      <div id="myB" class="overlay">
+          <button class="closebtn" onclick="closeB()">&times;</button>
+          <img class="overlay-content" src="slideshow_stahl/stahl_body.jpg">
+      </div>
+      <div id="myC" class="overlay">
+        <button class="closebtn" onclick="closeC()">&times;</button>
+        <img class="overlay-content" src="slideshow_stahl/stahl_back.jpg">
+      </div> 
+      <div id="myD" class="overlay">
+          <button class="closebtn" onclick="closeD()">&times;</button>
+          <img class="overlay-content" src="slideshow_stahl/stahl_back_body.jpg">
+      </div>    
+      <div id="myE" class="overlay">
+          <button class="closebtn" onclick="closeE()">&times;</button>
+          <img class="overlay-content" src="slideshow_stahl/stahl_head_back.jpg">
+      </div>        
+          <!--Overlay Ende-->    
+    <div class="logo"> <!--Logozeile-->
+        <img class="name" src="pictures_home/Name.png">    
+    </div>
+    <ul class="menubar"> <!--Menubar-->
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#instrumente">Instrumente</a></li>
+        <li><a href="index.html#reparatur">Reparatur</a></li>        
+        <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <h2> Parlor Modell </h2>
+    <div class="flexbox">  
+        <div class="slideshow-container">
+          <img class="mySlides fade" onclick="openA()" src="slideshow_stahl/stahl_front.jpg">
+          <img class="mySlides fade" onclick="openB()" src="slideshow_stahl/stahl_body.jpg">
+          <img class="mySlides fade" onclick="openC()" src="slideshow_stahl/stahl_back.jpg">
+          <img class="mySlides fade" onclick="openD()" src="slideshow_stahl/stahl_back_body.jpg">
+          <img class="mySlides fade" onclick="openE()" src="slideshow_stahl/stahl_head_back.jpg">
+          <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+          <a class="next" onclick="plusSlides(1)">&#10095</a>
+        </div>
+        <div class="imagerow">
+          <img class="minislide" onclick="currentSlide(1)" src="slideshow_stahl/stahl_front.jpg">
+          <img class="minislide" onclick="currentSlide(2)" src="slideshow_stahl/stahl_body.jpg">
+          <img class="minislide" onclick="currentSlide(3)" src="slideshow_stahl/stahl_back.jpg">
+          <img class="minislide" onclick="currentSlide(4)" src="slideshow_stahl/stahl_back_body.jpg">
+          <img class="minislide" onclick="currentSlide(5)" src="slideshow_stahl/stahl_head_back.jpg">
+        </div>
+        <div class="desc">
+          <ul class= desc_u>
+              <li>Decke: Fichte massiv</li>
+              <li>Korpus: amerikanischer Zuckerahorn</li>
+              <li>Hals: Edelkastanie</li>
+              <li>Griffbrett: Palisander</li>
+              <li>Hartöl Finish</li>
+              <li>Sattelbreite: 45mm</li>
+              <li>Mensur: 650mm</li>
+              <li>S/N: 1902</li>
+           </ul> 
+        </div>
+        </div>
+    <section id="kontakt"> <!--Kontaktsektion-->
+        <div class="impressum"> 
+            <h3>Steinhorst Gitarren</h3>
+                Tristan Steinhorst
+                <!--Theresienstraße 18, 90762 Fürth-->
+            <br>Email: tristan.steinhorst@gmx.de
+            <!--<br>Telefon: 0157 74247081-->
+            <a href="#home" class="home_impressum">Home</a>
+        </div>
+    </section> <!--Kontaktsektion Ende-->    
+<script src="script2.js"></script>    
+</body>

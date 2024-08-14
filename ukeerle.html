@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erlenmodell Ukulele</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!-- The overlay -->
+    <div id="myA" class="overlay">
+        <button class="closebtn" onclick="closeA()">&times;</button>
+        <img class="overlay-content" src="slideshow_uke_erle/erle_front.jpg">
+      </div> 
+      <div id="myB" class="overlay">
+          <button class="closebtn" onclick="closeB()">&times;</button>
+          <img class="overlay-content" src="slideshow_uke_erle/erle_body.jpg">
+      </div>
+      <div id="myC" class="overlay">
+        <button class="closebtn" onclick="closeC()">&times;</button>
+        <img class="overlay-content" src="slideshow_uke_erle/erle_back.jpg">
+      </div> 
+      <div id="myD" class="overlay">
+          <button class="closebtn" onclick="closeD()">&times;</button>
+          <img class="overlay-content" src="slideshow_uke_erle/erle_head_back.jpg">
+      </div>
+      <!--Overlay Ende-->    
+    <div class="logo"> <!--Logozeile-->
+        <img class="name" src="pictures_home/Name.png">    
+    </div>
+    <ul class="menubar"> <!--Menubar-->
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#instrumente">Instrumente</a></li>
+        <li><a href="index.html#reparatur">Reparatur</a></li>        
+        <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <h2> Erlen Modell </h2>
+    <div class="flexbox">  
+        <div class="slideshow-container">
+          <img class="mySlides fade" onclick="openA()" src="slideshow_uke_erle/erle_front.jpg">
+          <img class="mySlides fade" onclick="openB()" src="slideshow_uke_erle/erle_body.jpg">
+          <img class="mySlides fade" onclick="openC()" src="slideshow_uke_erle/erle_back.jpg">
+          <img class="mySlides fade" onclick="openD()" src="slideshow_uke_erle/erle_head_back.jpg">
+          <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+          <a class="next" onclick="plusSlides(1)">&#10095</a>
+        </div>
+        <div class="imagerow">
+          <img class="minislide" onclick="currentSlide(1)" src="slideshow_uke_erle/erle_front.jpg">
+          <img class="minislide" onclick="currentSlide(2)" src="slideshow_uke_erle/erle_body.jpg">
+          <img class="minislide" onclick="currentSlide(3)" src="slideshow_uke_erle/erle_back.jpg">
+          <img class="minislide" onclick="currentSlide(4)" src="slideshow_uke_erle/erle_head_back.jpg">
+        </div>
+        <div class="desc">
+          <ul class= desc_u>
+              <li>Decke: Erle massiv</li>
+              <li>Korpus: Erle</li>
+              <li>Hals: Erle</li>
+              <li>Griffbrett: Erle</li>
+              <li>Lack: Polyester</li>
+              <li>Sattelbreite: 35mm</li>
+              <li>Mensur: 409,47mm</li>
+              <li>S/N: 2101</li>
+           </ul> 
+        </div>
+        </div>
+    <section id="kontakt"> <!--Kontaktsektion-->
+        <div class="impressum"> 
+            <h3>Steinhorst Gitarren</h3>
+                Tristan Steinhorst
+                <!--Theresienstraße 18, 90762 Fürth-->
+            <br>Email: tristan.steinhorst@gmx.de
+            <!--<br>Telefon: 0157 74247081-->
+            <a href="#home" class="home_impressum">Home</a>
+        </div>
+    </section> <!--Kontaktsektion Ende-->    
+<script src="script2.js"></script>    
+</body>
