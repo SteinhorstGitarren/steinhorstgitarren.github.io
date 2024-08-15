@@ -305,12 +305,13 @@ tr:nth-child(even) {
     }
 }
 .alert {
-    max-width: 75%; 
+    margin: auto;
+    width: 50%;
+    left: 25%;
+    top:30%;
     position: fixed;
-    top: 30%;
     text-align: center;
     padding: 5px;
-    margin: 20%;
     border: 3px solid black;
     z-index:4;
     background-color: rgb(247, 179, 32);
