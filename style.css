@@ -305,6 +305,7 @@ tr:nth-child(even) {
     }
 }
 .alert {
+    max-width: 75%; 
     position: fixed;
     top: 30%;
     text-align: center;
