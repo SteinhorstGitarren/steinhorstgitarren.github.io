@@ -305,8 +305,7 @@ tr:nth-child(even) {
     }
 }
 .alert {
-    margin: auto;
-    width: 50%;
+    max-width: 50%;
     left: 25%;
     top:30%;
     position: fixed;
