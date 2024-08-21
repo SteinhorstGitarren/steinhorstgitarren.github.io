@@ -6,6 +6,7 @@ body {
     margin: 0;
     font-family: Verdana, Arial, sans-serif;
     font-size: 16px;
+    box-sizing: border-box;
 }
 .logo {
     background-color: #000000;
@@ -187,6 +188,7 @@ h2 { /*Modell*/
     padding-left: 15px;
     margin-top: -4px;
     max-width: 100%;
+    bottom: 0px;
 }
 @media (max-width: 850px) { /*Schriftgröße kleiner für Tablets&Handys*/
   body{
