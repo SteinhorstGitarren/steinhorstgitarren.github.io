@@ -186,6 +186,7 @@ h2 { /*Modell*/
   color: gold;
 }  
 .impressum {
+    position: relative;
     background-color: #000000;
     color: white;
     font-size: 14px;
