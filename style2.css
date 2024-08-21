@@ -186,14 +186,14 @@ h2 { /*Modell*/
   color: gold;
 }  
 .impressum {
-    position: relative;
-    background-color: #c22222;
+    position: absolute;
+    background-color: #000000;
     color: white;
     font-size: 14px;
     text-align: left;
-    padding-top: 3px;
+    box-sizing: border-box;
     padding-left: 15px;
-    max-width: 100%;
+    width: 100%;
     margin-bottom: 0px;
 }
 @media (max-width: 850px) { /*Schriftgröße kleiner für Tablets&Handys*/
