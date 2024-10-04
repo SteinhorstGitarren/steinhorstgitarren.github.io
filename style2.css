@@ -117,7 +117,7 @@ h2 { /*Modell*/
   }
   .minislide {
     width: 100px;
-    height:fit-content;
+    height:auto;
     padding: 1px;
     border-style: solid;
     border-width: 3px;
