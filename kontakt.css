@@ -165,6 +165,7 @@ a {
 @media (max-width:768px) {
     .oeffnung {
         font-size: 15px;
+        max-width: 75%;
     }
 }
 td {
@@ -186,14 +187,14 @@ th {
     flex-direction: row-reverse;
     flex-wrap: nowrap;
 }
-#zhcal-root {
+/*#zhcal-root {
     flex: 100%;
     max-width: 100%; /*nur width geht nicht*/
     /*height: fit-content über Calendarapp*/
-    background-color: #E5DB8A; 
+   /* background-color: #E5DB8A; 
     border-radius: 10px;
     border: 5px solid #111;
-}
+} in Calendar geschrieben*/
 .infos {
     flex:50%;
     max-width: 50%;
