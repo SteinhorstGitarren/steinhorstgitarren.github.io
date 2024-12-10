@@ -197,7 +197,7 @@ th {
     flex:50%;
     max-width: 50%;
     margin-top: 30px;
-    margin-right: -20%; /*weil sich Calendar komisch verhält*/
+    margin-right: -10%; /*weil sich Calendar komisch verhält*/
     margin-left: 20px;
 }
 .klink {
