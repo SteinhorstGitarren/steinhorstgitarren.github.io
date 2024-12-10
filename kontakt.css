@@ -194,10 +194,10 @@ th {
     border: 5px solid #111;
 } in Calendar geschrieben*/
 .infos {
-    flex:100%;
-    max-width: 100%;
+    flex:50%;
+    max-width: 50%;
     margin-top: 30px;
-    margin-right: -40%; /*weil sich Calendar komisch verhält*/
+    margin-right: -35%; /*weil sich Calendar komisch verhält*/
     margin-left: 20px;
 }
 .klink {
