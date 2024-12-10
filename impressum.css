@@ -1,0 +1,218 @@
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    background-color: white;
+    color: #111;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+a:active, a:hover {
+    background-color: #98adc3;
+    color:#111;
+ }
+.icon {
+    opacity: 0.9;
+    align-items: center;
+    width: 50px;
+    color: #111;
+    background-color: #E5EAFA;
+    position: fixed;
+    right: 5px;
+    top: 5%;
+    z-index: 4;
+    border-radius: 10px;
+}
+.icon img {
+    width: 100%;
+}
+.icon2{
+    align-items: center;
+    width: 50px;
+    position: fixed;
+    right: 5px;
+    top: 20%;
+    z-index: 4;
+}
+.icon2 img {
+    width: 100%;
+}
+.icon3{
+    align-items: center;
+    width: 50px;
+    position: fixed;
+    right: 5px;
+    top: 35%;
+    z-index: 4;
+}
+.icon3 img {
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .icon{
+       width:40px;
+    }
+    .icon2{
+      width:40px;
+      top:15%;
+    }
+    .icon3{
+      width: 40px;
+      top: 27%;
+    }
+  } 
+  @media (max-width: 600px) {
+    .icon{
+       width:30px;
+    }
+    .icon2{
+      width:30px;
+      top:13%;
+    }
+    .icon3{
+      width: 30px;
+      top: 22%;
+    }
+  } 
+/*Für About*/
+.aboutbox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.aboutlogo {
+    width: 35%;
+}
+.aboutbox p {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 50%;
+}
+@media (max-width:768px) {
+    .aboutbox {
+        flex-direction: column;
+    }
+    .aboutbox p {
+        width: 90%;  
+    }
+    .aboutlogo {
+        width: 50%;
+    }
+}
+.logo {
+    background-color: #111;
+}
+.name {
+    height: auto;
+    width: 500px;
+    max-width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.textimpressum {
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 15%;
+}
+.dropdown {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    z-index: 3;
+}
+.dropbtn {
+    width: 100%;
+    position: relative;
+    display: none;
+    border: none;
+    padding: 10px;
+    color: #111;
+    font-size: 12;
+    background-color: #98adc3;
+    cursor: pointer;
+    box-shadow: inset 0px 10px 20px #E5DB8A;
+}
+.dropbtn:active, .dropbtn:hover {
+    background-color: #b7bcc0;
+}
+@media (max-width: 600px) {
+    .dropbtn { 
+        display: block;
+    }
+}
+.menubar { /*Menu-Bar*/
+    background-color: white;
+    opacity: 0.95;
+    list-style-type: none;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0;
+}
+.menubar li {
+    float: inline-start;
+    width: 20%;
+}
+a {
+    color: white;
+}
+.menulinks {
+    color:#111;
+    display: block;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+.menulinks:active, .menulinks:hover {
+    background-color: #111;
+    color: white;
+}
+@media (max-width: 600px) {
+    .menubar {
+        position: absolute; /*damit nicht weißer Hintergrund mit aufgeht*/
+        width: 100%;
+        display: none;
+        
+    }
+    .menubar li {
+        float: none;
+        width: 100%;
+    }
+    .show {
+        display:block;
+    }
+}
+.ende {
+    position: relative; /*absolute mit bottom=0; wenn kein Inhalt es bis nach unten drückt*/
+    bottom: -200px;
+    width: 100%;
+    background-color: #111;
+    color: white;
+    font-size: 14px;
+    text-align: left;
+    padding-top: 3px;
+    padding-bottom: 20px;
+}
+.ende div {
+    padding-left: 10px;
+}
+.links {
+    position: absolute;
+    right: 10px;
+    padding: 10px;
+    top: 5px;
+}
+.home_ende {
+   color: #EFC44B;
+}
+@media (max-width: 768px) { /*Schriftgröße kleiner für Tablets&Handys*/
+    body{
+        font-size: 12px;
+    }
+    .ende {
+        font-size: 9px;
+    }
+  }

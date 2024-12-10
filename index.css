@@ -1,0 +1,449 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    background-color: white;
+    color: #111;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    
+}
+/*alert*/
+.alert {
+    left: 25%;
+    right: 25%;
+    top:30%;
+    position: fixed;
+    text-align: center;
+    padding: 5px;
+    border: 3px solid black;
+    z-index:4;
+    background-color: #98adc3;
+    opacity: 0.9;
+    box-shadow: 30px 30px 20px #111;
+}
+.alert button {
+    background-color: #EFC44B;
+    border: 1px solid #111;
+    color: #111;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: inset 2px 2px 5px #111;
+    cursor: pointer;
+    margin: 4px;
+    font-size: large;
+  }
+  /*alert ende*/
+a:active, a:hover {
+    background-color: #98adc3;
+    color:#111;
+ }
+.icon {
+    opacity: 0.9;
+    align-items: center;
+    width: 50px;
+    color: #111;
+    background-color: #E5EAFA;
+    position: fixed;
+    right: 5px;
+    top: 5%;
+    z-index: 4;
+    border-radius: 10px;
+}
+.icon img {
+    width: 100%;
+}
+.icon2{
+    align-items: center;
+    width: 50px;
+    position: fixed;
+    right: 5px;
+    top: 20%;
+    z-index: 4;
+}
+.icon2 img {
+    width: 100%;
+}
+.icon3{
+    align-items: center;
+    width: 50px;
+    position: fixed;
+    right: 5px;
+    top: 35%;
+    z-index: 4;
+}
+.icon3 img {
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .icon{
+       width:40px;
+    }
+    .icon2{
+      width:40px;
+      top:15%;
+    }
+    .icon3{
+      width: 40px;
+      top: 27%;
+    }
+  } 
+  @media (max-width: 600px) {
+    .icon{
+       width:30px;
+    }
+    .icon2{
+      width:30px;
+      top:13%;
+    }
+    .icon3{
+      width: 30px;
+      top: 22%;
+    }
+  } 
+.home { /*container für 2 Bilder*/
+    position: relative;
+}
+.slideshow1 { /*home Bildschirm*/
+    width: 100%;  
+    margin-bottom: -5px;
+}   
+.name {
+    left: 5%;
+    position: absolute;
+    top: 60%;
+    width: 90%;
+}
+.logo {
+    position: absolute;
+    width: 250px;
+    max-width: 35%;
+    top: 0%;
+    left: 0%;
+    opacity: 0.7;
+}
+.dropdown {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    z-index: 3;
+}
+.dropbtn {
+    width: 100%;
+    position: relative;
+    display: none;
+    border: none;
+    padding: 10px;
+    color: #111;
+    font-size: 12;
+    background-color: #98adc3;
+    cursor: pointer;
+    box-shadow: inset 0px 10px 20px #E5DB8A;
+}
+.dropbtn:active, .dropbtn:hover {
+    background-color: #b7bcc0;
+}
+@media (max-width: 600px) {
+    .dropbtn { 
+        display: block;
+    }
+}
+.menubar { /*Menu-Bar*/
+    background-color: white;
+    opacity: 0.95;
+    list-style-type: none;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0;
+}
+.menubar li {
+    float: inline-start;
+    width: 20%;
+}
+a {
+    color: white;
+}
+.menulinks {
+    color:#111;
+    display: block;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+.menulinks:active, .menulinks:hover {
+    background-color: #111;
+    color: white;
+}
+@media (max-width: 600px) {
+    .menubar {
+        position: absolute; /*damit nicht weißer Hintergrund mit aufgeht*/
+        width: 100%;
+        display: none;
+        
+    }
+    .menubar li {
+        float: none;
+        width: 100%;
+    }
+    .show {
+        display:block;
+    }
+}
+.flexbox {
+    margin: 0%;
+    justify-content:space-evenly;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.spruch { /*anfangstext*/
+    padding: 7%;
+    text-align: center;
+    color: white;
+    flex: 100%;
+    aspect-ratio: 8/1;
+    background-color: #111;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+.karolinks { 
+    text-align: center;
+    text-decoration: none;
+    flex: 32%;
+    max-width: 33%;
+    aspect-ratio: 1/1;
+    height: auto;
+    background-size:100%;
+    background-repeat: no-repeat;
+    margin: 5px;
+    overflow-y: hidden;
+    font-size: 30px;
+}
+.karolinks:active, .karolinks:hover {
+    box-shadow: inset 10px 10px 40px #111;
+}
+.karo2 { /*Ukulelen&Gitarren...*/
+    text-align: center;
+    text-decoration: none;
+    flex: 65%;
+    max-width: 66%;
+    aspect-ratio: 2/1;
+    height: auto;
+    background-size:50%;
+    background-repeat: no-repeat;
+    margin: 5px;
+    overflow-y: hidden;
+    box-shadow: 0px 50px 100px  inset #111;
+    font-size: 30px;
+}
+.karo3 { /*gespiegelte Gitarren*/
+    text-align: center;
+    text-decoration: none;
+    flex: 32%;
+    max-width: 33%;
+    aspect-ratio: 1/1;
+    height: auto;
+    background-size:100%;
+    background-repeat: no-repeat;
+    margin: 5px;
+    overflow-y: hidden;
+    box-shadow: 0px 10px 50px  inset #111;
+    font-size: 25px;
+}
+#ukehead {
+    background-color: #E5DB8A;
+    background-image: url(pictures_uke/uke_cut_holz2.png);
+}
+#star {
+    background-image: url(slideshow_uke_star/star_close_quadrat.jpg);
+}
+#erle {
+    background-image: url(slideshow_uke_erle/erle_body_quadrat.jpg);
+}
+#gitarre {
+    background-image: url(pictures_gitarre/stahl_spiegelung_schatten2.2.png);
+    background-color: #e5e5ab;
+}
+#parlor {
+    background-image: url(slideshow_stahl/stahl_body_quadrat.jpg);
+}
+.karotext3 { /*gespiegelte Gitarren*/
+    text-align: center;
+    margin-top: 75%;
+}
+.karotext2 { /*...Verwendung heimischer Hölzer*/
+    text-align: left;
+    margin-top: 10%;
+    margin-left: 30%;
+}
+.linktext {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    background-color: rgba(29, 27, 27, 0.5);
+    margin-top: 30%;
+    text-decoration: none;
+    color:white;
+}
+.zusatz { /*Star Modell*/
+    border-top: 2px solid #111;
+    border-bottom: 2px solid #111;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 30%;
+    text-decoration: none;
+    color:#111;
+    font-size: 20px;
+}
+@media (max-width: 768px) {
+    .spruch {
+        font-size: 20px;
+    }
+    .karolinks {
+        font-size: 20px;
+        flex: 50%;
+        max-width: 48%;
+        order: 2;
+    }
+    .zusatz {
+        font-size: 15px;
+    }
+    .karo2 {
+        font-size: 20px;
+        flex:100%;
+        max-width: 100%;
+        order: 1;
+    }
+    .karotext2 {
+        margin-left: 40%;
+    }
+    .karo3 {
+        font-size: 15px;
+        flex: 50%;
+        max-width: 48%;
+        order: 3;
+    }
+}
+@media (max-width: 600px) {
+    .karolinks {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .karo2 {
+        flex:100%;
+        max-width: 100%;
+    }
+    .karo3 {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+.repairslide { /*slideshow Werkstatt*/
+    position: relative;
+    width: 100%;
+    text-align: center;
+    top: -50px;
+}
+.mySlides {
+    background-color: #111;
+    margin-top: 55px;
+    max-width: 100%;
+    object-fit: cover;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+.repairhead {
+    color: #111;
+    text-align: center;
+    z-index: 2;
+    font-size: 30px;
+}
+.repairpitch { /*werkstatttext*/
+    position: relative;
+    text-align: left;
+    margin: 3%;
+    width: 90%;
+    font-size: 20px;
+}
+.preisliste {
+    position: relative;
+    background-color: #E5DB8A;
+    margin: 3%;
+    border: 1px solid;
+    width: 75%;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+td {
+    border: 1px solid;
+    padding: 5px;
+
+}
+th {
+    padding: 5px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+tr:nth-child(even) {
+    background-color: #Ede5ab;
+}
+.repairtext p {
+    margin-bottom: 80px;
+    margin-top: -1%;
+    margin-left: 3%;
+}
+@media (max-width: 768px) {
+    .repairhead {
+        font-size: 20px;
+    }
+    .repairpitch {
+        font-size: 15px;
+        top: -40px;
+    }
+    .preisliste {
+        font-size: 15px;
+    }
+}
+.about {
+    border: 2px solid white;
+    text-decoration: none;
+    border-radius: 25px;
+    position: static;
+    background-color: #111;
+    padding: 10px;
+}
+.ende {
+    position: relative;
+    background-color: #111;
+    color: white;
+    font-size: 14px;
+    text-align: left;
+    padding-top: 3px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+}
+.links {
+    position: absolute;
+    right: 10px;
+    padding: 10px;
+    top: 5px;
+}
+.home_ende {
+   color: #EFC44B;
+}
+@media (max-width: 768px) { /*Schriftgröße kleiner für Tablets&Handys*/
+    body{
+        font-size: 12px;
+    }
+    .ende {
+        font-size: 9px;
+    }
+  }

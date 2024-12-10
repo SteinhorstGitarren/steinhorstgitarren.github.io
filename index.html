@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Gitarrenwerkstatt in Nürnberg. Neubau von Ukulelen und Akustik-Gitarren,
-        Reparaturen aller Art wie Kopfbrüche, Bundabrichtungen, Neubundierung und Elektronik. Kontakt: info@steinhorst-gitarren.de">
+    <meta name="description" content="Gitarrenwerkstatt in Nürnberg. Neubau von Ukulelen und Akustik Gitarren, Gitarre besaiten,
+        Gitarren Service, Reparaturen aller Art wie Kopfbrüche, Bundabrichtungen, Neubundierung und Elektronik. Kontakt: info@steinhorst-gitarren.de">
     <meta name="robots" content="follow, index,max-snippet:-1, max-video-preview:-1, max-image-preview:large">
     <title>Steinhorst Gitarren Nürnberg-Neubau und Reparaturen</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="apple-touch-icon" sizes="180x180" href="Favicon_data/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="Favicon_data/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="Favicon_data/favicon-16x16.png">
@@ -16,163 +16,133 @@
 <body>
     <div class="alert">
         Steinhorst Gitarren startet Anfang 2025 in Nürnberg. Sie können sich gerne schon auf der Website umsehen und sich bei Anfragen unter "Kontakt" per Mail bei mir melden.
-        <button onclick="this.parentElement.style.display='none';">&times;</button>
+        <button onclick="this.parentElement.style.display='none';">OK</button>
     </div>
+    <a href="kontakt.html" class="icon"><img src="Icons/TerminIcon.png" alt="Terminkalender"></a>
+    <a href="https://instagram.com/steinhorstgitarren_nuremberg" class="icon2"><img src="Icons/instagram.png" alt="InstagramIcon"></a>
+    <a href="https://youtube.com/@steinhorstgitarrennurnberg" class="icon3"><img src="Icons/youtube.png" alt="YoutubeIcon"></a>
     <section id="home">
         <div class="home"> 
-            <img class="slideshow1" src="pictures_home/slideshow1.png">
-            <img class="name" src="pictures_home/Name.png">  
-            <img class="logo" src="pictures_home/Logo_skizze_Name_invert.png">
+            <img class="slideshow1" src="pictures_home/slideshow1.png" alt="Stahlsaiten Gitarre Nürnberg">
+            <img class="name" src="pictures_home/Name.png" alt="Steinhorst Gitarren Nürnberg">  
+            <img class="logo" src="pictures_home/Logo_skizze_Name_invert.png" alt="Logo Steinhorst Gitarren Nürnberg">
         </div>
     </section>
-    <ul class="menubar"> <!--Menubar-->
-            <li><a href="#home">Home</a></li>
-            <li><a href="#instrumente">Instrumente</a></li>
-            <li><a href="#reparatur">Reparatur</a></li>        
-            <li><a href="#kontakt">Kontakt</a></li>
-    </ul>   
-    <hr> <!--schwarze Zeile-->
-    <section id="instrumente"> <!--Instrumentensektion-->
-        <!--Ukulelensektion-->
-        <h1>Ukulelen</h1>
-        <div class="ukepitch"> <!--Ukulelen-->
-            <!--<div class="uke_cut_shadow">-->
-                <img class="uke_cut" src="pictures_uke/uke_cut_holz.png">
-                <!--<div class="uke_shadow"></div>
-            </div>-->    
-            <p> Meine Ukulelen bestehen hauptsächlich aus nachhaltigen Hölzern.
-                Für Body und Hals verwende ich über 30 Jahre getrocknete deutsche Erle. 
-                Auch Fichtenholz für die Decke, sowie Nussbaum und Apfel werden verbaut.
-                <br><br>Ein optisches Highlight ist das "Star" Modell. Mit eigens entwickelter Technik können Bilder, 
-                wie dieser von mir gemalte Vogel, auf die Decke des Instrumentes übertragen werden, ohne dass 
-                der Klang dabei merklich beeinträchtigt wird.
-                <br><br>Auf privaten Wunsch kann zusätzlich zu meinen Modellen 
-                auch ein Custom Modell mit anderen Hölzern & Maßen angefertigt werden. 
-            </p>    
+    <div class="dropdown">
+    <button onclick="mymenudrop()" class="dropbtn">Menu</button>
+    <ul class="menubar" id="menu"> <!--Menubar-->
+        <li><a href="#home" class="menulinks">Home</a></li>
+        <li><a href="index.html#instrumente" class="menulinks">Instrumente</a></li>
+        <li><a href="index.html#reparatur" class="menulinks">Reparatur</a></li>        
+        <li><a href="kontakt.html" class="menulinks">Kontakt</a></li>
+        <li><a href="about.html" class= "menulinks">About</a></li>
+    </ul> 
+    </div>
+    <div class="flexbox">
+        <div class="spruch">
+            "Präzises Handwerk und künstlerische Gestaltung verbinden sich im Gitarrenbau,
+            um ein optisch und klanglich möglichst schönes Instrument hervorzubringen."<br><br>
+            <strong style="color: #efc44b">STEINHORST GITARREN</strong>: Reparaturen, Neubau, Custom Modelle</strong>    
         </div>
-        <hr>
-        <div class="ukemodell-zeile">
-            <a href="./ukestar" class="karo"> <!--ukestar.html ohne.html-->
-            <h2 class="fichtenmodell-head"> Star </h2>
-            <!--<h3 class="fichtenmodell-text"> -Fichtendecke<br>-Hochglanz Poly Lack<br>-Erlenkorpus</h3>-->
-            <img class="thumbnail" src="slideshow_uke_star/star_close_quadrat.jpg">
-            </a>     
-            <a href="./ukeerle" class="karo"> <!--ukeerle.html ohne.html-->
-             <h2 class="erlenmodell-head"> Erlen Modell </h2>
-             <!--<h3 class="erlenmodell-text"> -Erlendecke<br>-Hochglanz Poly Lack<br>-Erlenkorpus</h3>-->
-             <img class="thumbnail" src="slideshow_uke_erle/erle_body_quadrat.jpg">
-            </a> 
-            <a href="#fichtenmodell-öl" class="karo">
-            <h2 class="fichtenmodell-öl-head"> Fichten Modell<br>in Entwicklung </h2>
-            <!--<h3 class="fichtenmodell-öl-text"> -Fichtendecke<br>-Geölte Oberfläche<br>-Erlenkorpus</h3>-->
-            <img class="thumbnail" src="pictures_uke/ukedecke_leiste_nah.png">
-            </a> 
-            <a href="#erlenmodell-öl" class="karo">
-            <h2 class="erlenmodell-öl-head"> Erlen Modell 2<br>in Entwicklung </h2>
-            <!--<h3 class="erlenmodell-öl-text"> -Erlendecke<br>-Geölte Oberfläche<br>-Erlenkorpus</h3>-->
-            <img class="thumbnail" src="pictures_uke/ukedecke_leiste_nah.png">
-            </a>
+        <section id="instrumente"></section>
+        <a href="ukestar.html" class="karolinks" id="star">
+            <div class="linktext">Star Ukulele</div>
+            <div class="zusatz">ein optisches Highlight</div>
+        </a> 
+        <div class="karo2" id="ukehead">
+            <p class="karotext2"><b>Ukulelen & Gitarren</b><br>&nbsp &nbsp Verwendung
+                <br>&nbsp &nbsp &nbsp heimischer Hölzer</p>
+          
+        </div>   
+        <a href="ukeerle.html" class="karolinks" id="erle">
+            <div class="linktext">Erlen Ukulele</div>
+            
+        </a> 
+        <div class="karo3" id="gitarre">
+            <p class="karotext3"><b>Klang</b> & <br><b>Handwerkskunst</b>
+            </p>
+            
         </div>
-        <hr>    
-        <!--Ukulelensektion Ende-->
+        <a href="parlor.html" class="karolinks" id="parlor">
+            <div class="linktext">Parlor Gitarre</div>
+        </a> 
+    </div>
+    </section>
+    <section id="reparatur">
+    </section>   
 
-        <!--Gitarrensektion-->
-        <h1>Gitarren</h1>
-        <div class="gitarrenpitch">
-            <!--<div class="stahl_cut_shadow">-->
-                <img class="stahl_cut" src="pictures_gitarre/stahl_spiegelung_schatten2.png">
-                <!--
-                <div class="shadows">
-                 <div class="stahl_shadow_l"></div>
-                 <div class="stahl_shadow_r"></div>
-                </div>
-            </div>-->        
-            <p> Präzises Handwerk und künstlerische Gestaltung verbinden sich im Gitarrenbau,
-                um ein optisch und klanglich möglichst schönes Instrument hervorzubringen.
-                <br>Bei STEINHORST GITARREN wird darauf viel Wert gelegt, um für den Musiker ein 
-                begeisterndes Spielerlebnis zu erzeugen. 
-                <br><br>Derzeit gibt es nur ein Modell zu Auswahl, andere Modelle sind aber
-                bereits in der Entwicklung.
-                </p>    
-        </div>    
-        <hr>    
-        <div class="gitarrenmodell-zeile"> 
-            <a href="./parlor" class="karo"> <!--parlor.html ohne.html-->
-            <h2 class="parlormodell-head"> Parlor Modell </h2>
-            <!--<h3 class="parlormodell-text"> -Fichtendecke<br>-komplett geölte Oberfläche<br>-amerikanischer Zuckerahorn Korpus</h3>-->
-            <img class="thumbnail" src="slideshow_stahl/stahl_body_quadrat.jpg">
-            </a> 
-        </div>
-        <hr>
-        <!--Gitarrensektion Ende-->    
-     <!--Instrumentensektion Ende-->    
-    <section id="reparatur"> <!--Reparatursektion-->
-    </section> <!--Instrumentensektion überlappt,
-    damit h1 Gitarren unter nächter h1 verschwindet-->
-        <h1>Reparaturwerkstatt</h1>
         <div class="repairslide"> <!--2.Slideshow-->
-            <img class="mySlides fade" src="pictures_reparatur/neckshapes_sw.png">
-            <img class="mySlides fade" src="pictures_reparatur/hanika_rep_cut.png">
-            <img class="mySlides fade" src="pictures_reparatur/bridgeshave,etc_sw.png">
-            <img class="mySlides fade" src="pictures_reparatur/refret_sw.png">
-            <img class="mySlides fade" src="pictures_reparatur/body_roh.png">
+            <img class="mySlides fade" src="pictures_reparatur/neckshapes_sw.png" alt="Reparatur Nürnberg Gitarre entlacken">
+            <img class="mySlides fade" src="pictures_reparatur/hanika_rep_cut.png" alt="Gitarre Deckenriss Reparatur Nürnberg">
+            <img class="mySlides fade" src="pictures_reparatur/bridgeshave,etc_sw.png" alt="Gitarre Bridge Shaving Reparatur Nürnberg">
+            <img class="mySlides fade" src="pictures_reparatur/refret_sw.png" alt="Gitarre Refret Neubundierung Nürnberg">
+            <img class="mySlides fade" src="pictures_reparatur/body_roh.png" alt="E Gitarren Herstellung Nürnberg">
         </div>
+        <div class="repairtext">
+        <p class="repairhead"><b>Reparaturen</b></p>
         <p class="repairpitch"> Ob Anfänger Instrument oder hochpreisige Gitarre...<br>
-             als Gitarrenspieler weiß ich, dass ein Instrument, das auf den Spieler angepasst ist,
-             deutlich mehr Spaß und Erfolg beim Musizieren bringt.
-             Bei Einem Auftritt oder einer Aufnahme im Studio kann ein Schnarren oder schlechter
-             Ton über den Tonabnehmer nicht nur den Spaß sondern den Auftritt oder die Aufnahme ruinieren. 
-             Und bricht mal der Kopf oder reißt die Decke, kann man garnicht mehr spielen. 
-             <br><br>Von Einstellungen, Bundabrichtung, Neubundierung, Tonabnehmer reparieren bis hin zum Hals entlacken
-             und profilieren. Durch meine über 4 Jahre Erfahrung mit allen möglichen Gitarrentypen als Reparateur
-             bei BTM-Guitars, kann ich bei fast jedem Problem mit Rat und Tat zus Seite stehen,
-             sodass Sie langfristig ein optimales Spielerlebnis mit ihrem Instrument haben. 
-        </p>
-        <table class="preisliste">
-        <tr>
-            <th>Reparaturpreise</th>
-        </tr>    
-        <tr>
-            <td>-Besaiten</td><td>30€</td>
-        </tr>
-        <tr>
-            <td>-Besaiten locking Tremolo (Floyd Rose/Kahler)</td><td>40€</td>
-        </tr>
-        <tr>    
-            <td>-Besaiten und Einstellen Akustikgitarre/Jazz mit Holzsteg</td><td>45€</td>
-        </tr>
-        <tr>    
-            <td>-Besaiten und Einstellen E-Gitarre</td><td>55€</td>
-        </tr>
-        <tr>    
-            <td>-Besaiten und Einstellen locking Tremolo (Floyd Rose/Kahler)</td><td>85€</td>
-        </tr>
-        <tr>    
-            <td>-Bundabrichtung inkl. Besaiten und Einstellen</td><td>180€</td>
-        </tr>
-        <tr>    
-            <td>-Neubundierung</td><td>350€</td>
-        </tr>
-        <tr>    
-            <td>-Neubundierung mit Binding</td><td>410€</td>
-        </tr>
-        <tr>    
-            <td>-Stundensatz für sonstige Reparaturen</td><td>81€</td>
-        </tr>  
-        </table>   
-        <hr>
-    </section> <!--Reparatursektion Ende-->   
-    <section id="kontakt"> <!--Kontaktsektion-->
-        <div class="impressum"> 
-            <h3>Steinhorst Gitarren</h3>
-                Tristan Steinhorst
-                <!--Theresienstraße 18, 90762 Fürth-->
-            <br>Email: info@steinhorst-gitarren.de
-            <!--<br>Telefon: 0157 74247081-->
-            <a href="#home" class="home_impressum">Home</a>
-            <a href="datenschutz.html" class="datenschutz">Datenschutzerklärung</a>
+            als Gitarrenspieler weiß ich, dass ein Instrument, das auf den Spieler angepasst ist,
+            deutlich mehr Spaß und Erfolg beim Musizieren bringt.
+            Bei Einem Auftritt oder einer Aufnahme im Studio kann ein Schnarren oder schlechter
+            Ton über den Tonabnehmer nicht nur den Spaß sondern den Auftritt oder die Aufnahme ruinieren. 
+            Und bricht mal der Kopf oder reißt die Decke, kann man garnicht mehr spielen. 
+            <br><br>Von Gitarren Service, Gitarre Besaiten & Einstellen, Bundabrichtung, Neubundierung, Tonabnehmer reparieren bis hin zum Gitarre entlacken
+            und profilieren. Durch meine über 4 Jahre Erfahrung mit allen möglichen Gitarrentypen als Reparateur
+            beim Gitarrenladen BTM-Guitars in Nürnberg, kann ich bei fast jedem Problem mit Rat und Tat zur Seite stehen,
+            sodass Sie langfristig ein optimales Spielerlebnis mit ihrem Instrument haben. 
+       </p>
+       <table class="preisliste">
+       <tr>
+           <th>Reparaturpreise</th>
+       </tr>    
+       <tr>
+           <td>-Besaiten</td><td>30€</td>
+       </tr>
+       <tr>
+           <td>-Besaiten locking Tremolo (Floyd Rose/Kahler)</td><td>40€</td>
+       </tr>
+       <tr>    
+           <td>-Besaiten und Einstellen Akustikgitarre/Jazz mit Holzsteg</td><td>45€</td>
+       </tr>
+       <tr>    
+           <td>-Besaiten und Einstellen E Gitarre</td><td>55€</td>
+       </tr>
+       <tr>    
+           <td>-Besaiten und Einstellen locking Tremolo (Floyd Rose/Kahler)</td><td>85€</td>
+       </tr>
+       <tr>    
+           <td>-Bundabrichtung inkl. Besaiten und Einstellen</td><td>180€</td>
+       </tr>
+       <tr>    
+           <td>-Neubundierung inkl. Besaiten und Einstellen</td><td>350€</td>
+       </tr>
+       <tr>    
+           <td>-Neubundierung mit Binding inkl. Besaiten und Einstellen</td><td>410€</td>
+       </tr>
+       <tr>
+            <td><small>Das polieren und reinigen des Griffbretts ist inbegriffen. Reinigung des Korpus zzgl. 15€</small></td>
+       </tr>
+       <tr>        
+           <td>-Stundensatz für sonstige Reparaturen</td><td>81€</td>
+       </tr>  
+       </table>   
+       <p><small>Alle Preis inkl. gesetzlicher MwSt. exclusive Materialkosten</small></p>
         </div>
-    </section> <!--Kontaktsektion Ende-->    
-    <script src="script.js"></script>
+   <a href="about.html" class="about">Mehr über meine Werkstatt...</a>
+       <div class="ende"> 
+           <div><h3>Steinhorst Gitarren</h3>
+               Tristan Steinhorst
+           <br>Email: info@steinhorst-gitarren.de
+           <br>Lenkersheimerstraße 10, 90431 Nürnberg
+           <!--<br>Telefon: 0157 74247081--></div>
+           <div class="links">
+           <a href="impressum.html">Impressum</a>
+           <a href="datenschutz.html" class="datenschutz" target="_blank">Datenschutzerklärung</a>
+           <br>
+           <a href="#home" class="home_ende">Home</a>
+           </div>
+       </div>
+   <script src="script.js"></script>
+</body>
 </body>
 </html>

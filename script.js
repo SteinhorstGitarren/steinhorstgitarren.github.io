@@ -12,3 +12,19 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block"; 
   setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
+
+function mymenudrop() { //damit es beim klick ausgefahren wird
+  document.getElementById("menu").classList.toggle("show");
+}
+window.onclick = function(event) { //damit es beim click irgendwo auf dem Bildschirm eingefahren wird
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("menubar");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}

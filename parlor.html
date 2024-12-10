@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Parlor Modell-Bilder und Beschreibung. Gitarrenwerkstatt in Nürnberg. Neubau von Ukulelen und Akustik-Gitarren,
-        Reparaturen aller Art wie Kopfbrüche, Bundabrichtungen, Neubundierung und Elektronik. Kontakt: info@steinhorst-gitarren.de">
+        Gitarre besaiten, Gitarren Service, Reparaturen aller Art wie Kopfbrüche, Bundabrichtungen, Neubundierung und Elektronik. Kontakt: info@steinhorst-gitarren.de">
     <meta name="robots" content="follow, index,max-snippet:-1, max-video-preview:-1, max-image-preview:large">
     <title>Steinhorst Gitarren Nürnberg-Parlor Modell</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="instrument.css">
     <link rel="apple-touch-icon" sizes="180x180" href="Favicon_data/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="Favicon_data/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="Favicon_data/favicon-16x16.png">
@@ -17,56 +17,63 @@
     <!-- The overlay -->
     <div id="myA" class="overlay">
         <button class="closebtn" onclick="closeA()">&times;</button>
-        <img class="overlay-content" src="slideshow_stahl/stahl_front.jpg">
+        <img class="overlay-content" src="slideshow_stahl/stahl_front.jpg" alt="Parlor Gitarre Nürnberg Front">
       </div> 
       <div id="myB" class="overlay">
           <button class="closebtn" onclick="closeB()">&times;</button>
-          <img class="overlay-content" src="slideshow_stahl/stahl_body.jpg">
+          <img class="overlay-content" src="slideshow_stahl/stahl_body.jpg" alt="Parlor Gitarre Nürnberg Decke">
       </div>
       <div id="myC" class="overlay">
         <button class="closebtn" onclick="closeC()">&times;</button>
-        <img class="overlay-content" src="slideshow_stahl/stahl_back.jpg">
+        <img class="overlay-content" src="slideshow_stahl/stahl_back.jpg" alt="Parlor Gitarre Nürnberg Back">
       </div> 
       <div id="myD" class="overlay">
           <button class="closebtn" onclick="closeD()">&times;</button>
-          <img class="overlay-content" src="slideshow_stahl/stahl_back_body.jpg">
+          <img class="overlay-content" src="slideshow_stahl/stahl_back_body.jpg" alt="Parlor Gitarre Nürnberg Boden">
       </div>    
       <div id="myE" class="overlay">
           <button class="closebtn" onclick="closeE()">&times;</button>
-          <img class="overlay-content" src="slideshow_stahl/stahl_head_back.jpg">
+          <img class="overlay-content" src="slideshow_stahl/stahl_head_back.jpg" alt="Parlor Gitarre Nürnberg Kopf">
       </div>        
-          <!--Overlay Ende-->    
+          <!--Overlay Ende-->   
+          <a href="kontakt.html" class="icon"><img src="Icons/TerminIcon.png" alt="Terminkalender"></a>
+          <a href="https://instagram.com/steinhorstgitarren_nuremberg" class="icon2"><img src="Icons/instagram.png" alt="InstagramIcon"></a>
+          <a href="https://youtube.com/@steinhorstgitarrennurnberg" class="icon3"><img src="Icons/youtube.png" alt="YoutubeIcon"></a>
     <div class="logo"> <!--Logozeile-->
-        <img class="name" src="pictures_home/Name.png">    
+        <img class="name" src="pictures_home/Name.png" alt="Steinhorst Gitarren Nürnberg">    
     </div>
-    <ul class="menubar"> <!--Menubar-->
-        <li><a href="./#home">Home</a></li> <!--index.html nur mit./-->
-        <li><a href="./#instrumente">Instrumente</a></li>
-        <li><a href="./#reparatur">Reparatur</a></li>        
-        <li><a href="#kontakt">Kontakt</a></li>
-    </ul>
+    <div class="dropdown">
+        <button onclick="mymenudrop()" class="dropbtn">Menu</button>
+        <ul class="menubar" id="menu"> <!--Menubar-->
+            <li><a href="#home" class="menulinks">Home</a></li>
+            <li><a href="index.html#instrumente" class="menulinks">Instrumente</a></li>
+            <li><a href="index.html#reparatur" class="menulinks">Reparatur</a></li>        
+            <li><a href="kontakt.html" class="menulinks">Kontakt</a></li>
+            <li><a href="about.html" class= "menulinks">About</a></li>
+        </ul> 
+    </div> 
     <h2> Parlor Modell </h2>
     <div class="flexbox">  
         <div class="slideshow-container">
-          <img class="mySlides fade" onclick="openA()" src="slideshow_stahl/stahl_front.jpg">
-          <img class="mySlides fade" onclick="openB()" src="slideshow_stahl/stahl_body.jpg">
-          <img class="mySlides fade" onclick="openC()" src="slideshow_stahl/stahl_back.jpg">
-          <img class="mySlides fade" onclick="openD()" src="slideshow_stahl/stahl_back_body.jpg">
-          <img class="mySlides fade" onclick="openE()" src="slideshow_stahl/stahl_head_back.jpg">
+          <img class="mySlides fade" onclick="openA()" src="slideshow_stahl/stahl_front.jpg" alt="Parlor Gitarre Nürnberg Front">
+          <img class="mySlides fade" onclick="openB()" src="slideshow_stahl/stahl_body.jpg" alt="Parlor Gitarre Nürnberg Decke">
+          <img class="mySlides fade" onclick="openC()" src="slideshow_stahl/stahl_back.jpg" alt="Parlor Gitarre Nürnberg Back">
+          <img class="mySlides fade" onclick="openD()" src="slideshow_stahl/stahl_back_body.jpg" alt="Parlor Gitarre Nürnberg Boden">
+          <img class="mySlides fade" onclick="openE()" src="slideshow_stahl/stahl_head_back.jpg" alt="Parlor Gitarre Nürnberg Kopf">
           <a class="prev" onclick="plusSlides(-1)">&#10094</a>
           <a class="next" onclick="plusSlides(1)">&#10095</a>
         </div>
         <div class="imagerow">
-          <img class="minislide" onclick="currentSlide(1)" src="slideshow_stahl/stahl_front.jpg">
-          <img class="minislide" onclick="currentSlide(2)" src="slideshow_stahl/stahl_body.jpg">
-          <img class="minislide" onclick="currentSlide(3)" src="slideshow_stahl/stahl_back.jpg">
-          <img class="minislide" onclick="currentSlide(4)" src="slideshow_stahl/stahl_back_body.jpg">
-          <img class="minislide" onclick="currentSlide(5)" src="slideshow_stahl/stahl_head_back.jpg">
+          <img class="minislide" onclick="currentSlide(1)" src="slideshow_stahl/stahl_front.jpg" alt="Parlor Gitarre Nürnberg Front">
+          <img class="minislide" onclick="currentSlide(2)" src="slideshow_stahl/stahl_body.jpg" alt="Parlor Gitarre Nürnberg Decke">
+          <img class="minislide" onclick="currentSlide(3)" src="slideshow_stahl/stahl_back.jpg" alt="Parlor Gitarre Nürnberg Back"> 
+          <img class="minislide" onclick="currentSlide(4)" src="slideshow_stahl/stahl_back_body.jpg" alt="Parlor Gitarre Nürnberg Boden">
+          <img class="minislide" onclick="currentSlide(5)" src="slideshow_stahl/stahl_head_back.jpg" alt="Parlor Gitarre Nürnberg Kopf">
         </div>
         <div class="desc">
           <ul class= desc_u>
               <li>Decke: Fichte massiv</li>
-              <li>Korpus: amerikanischer Zuckerahorn</li>
+              <li>Korpus: Zuckerahorn</li>
               <li>Hals: Edelkastanie</li>
               <li>Griffbrett: Palisander</li>
               <li>Hartöl Finish</li>
@@ -74,17 +81,24 @@
               <li>Mensur: 650mm</li>
               <li>S/N: 1902</li>
            </ul> 
+           <p><strong>Produktanfrage:
+            <br>info@steinhorst-gitarren.de
+           </strong></p>
         </div>
         </div>
     <section id="kontakt"> <!--Kontaktsektion-->
-        <div class="impressum"> 
-            <h3>Steinhorst Gitarren</h3>
+        <div class="ende"> 
+            <div><h3>Steinhorst Gitarren</h3>
                 Tristan Steinhorst
-                <!--Theresienstraße 18, 90762 Fürth-->
             <br>Email: info@steinhorst-gitarren.de
-            <!--<br>Telefon: 0157 74247081-->
-            <a href="index.html#home" class="home_impressum">Home</a>
-            <a href="datenschutz.html" class="datenschutz">Datenschutzerklärung</a>
+            <br>Lenkersheimerstraße 10, 90431 Nürnberg
+            <!--<br>Telefon: 0157 74247081--></div>
+            <div class="links">
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html" class="datenschutz" target="_blank">Datenschutzerklärung</a>
+            <br>
+            <a href="index.html" class="home_ende">Home</a>
+            </div>
         </div>
     </section> <!--Kontaktsektion Ende-->    
 <script src="script2.js"></script>    
