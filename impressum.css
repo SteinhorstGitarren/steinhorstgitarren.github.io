@@ -196,6 +196,10 @@ a {
     padding-top: 3px;
     padding-bottom: 20px;
 }
+#imp { /*für Impressumssaite, da kein Inhalt es bis unten drückt*/
+    position: absolute;
+    bottom: 0px;
+}
 .ende div {
     padding-left: 10px;
 }
