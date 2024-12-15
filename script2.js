@@ -1,4 +1,4 @@
-window.onload = function() { //für onload fadein
+window.onload = function load() { //für onload fadein
   document.body.setAttribute("class", "loaded");
 }
 
