@@ -9,6 +9,11 @@ body {
     font-family: Verdana, Arial, sans-serif;
     font-size: 16px;
     box-sizing: border-box;
+    position: relative; /*für footing*/
+    min-height: 100vh; /*für footing*/
+}
+.inhalt {
+    padding-bottom: 200px; /*muss größer als footing sein*/
 }
 a:active, a:hover {
     background-color: #98adc3;
@@ -186,8 +191,8 @@ a {
     }
 }
 .ende {
-    position: relative; /*absolute mit bottom=0; wenn kein Inhalt es bis nach unten drückt*/
-    bottom: -200px;
+    position: absolute; /*mit .inhalt padding bottom >= .ende hight in einem container und body position: relative*/
+    bottom: 0;
     width: 100%;
     background-color: #111;
     color: white;
