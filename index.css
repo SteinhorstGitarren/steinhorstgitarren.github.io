@@ -11,6 +11,18 @@ body {
     position: relative; /*für footing*/
     min-height: 100vh; /*für footing*/
 }
+body { /*für onloasd fadein*/
+    background-color: #111;
+    opacity: 0;
+    -moz-transition: background-color 3s ease-in, opacity 2s;
+    -webkit-transition: background-color 3s ease-in, opacity 2;
+    -o-transition: background-color 3s ease-in, opacity 2s;
+    transition: background-color 3s ease-in, opacity 2s;
+}
+.loaded {
+    background-color: white;
+    opacity: 1;
+}
 .inhalt {
     padding-bottom: 200px; /*muss größer als footing sein*/
 }
