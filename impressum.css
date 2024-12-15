@@ -15,10 +15,10 @@ body {
 body { /*für onloasd fadein*/
     background-color: #111;
     opacity: 0;
-    -moz-transition: background-color 0.5s ease-in, opacity 2s;
-    -webkit-transition: background-color 0.5s ease-in, opacity 2s;
-    -o-transition: background-color 0.5s ease-in, opacity 2s;
-    transition: background-color 0.5s ease-in, opacity 2s;
+    -moz-transition: background-color 2s ease-in, opacity 2s;
+    -webkit-transition: background-color 2s ease-in, opacity 2s;
+    -o-transition: background-color 2s ease-in, opacity 2s;
+    transition: background-color 2s ease-in, opacity 2s;
 }
 .loaded {
     background-color: white;
