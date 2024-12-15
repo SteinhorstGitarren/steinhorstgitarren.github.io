@@ -1,3 +1,7 @@
+window.onload = function() { //für onload fadein
+  document.body.setAttribute("class", "loaded");
+}
+
 var slideIndex = 1; /*Slideshow*/
 showSlides(slideIndex);
 
