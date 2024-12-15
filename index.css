@@ -8,7 +8,11 @@ body {
     font-family: Verdana, Arial, sans-serif;
     font-size: 16px;
     box-sizing: border-box;
-    
+    position: relative; /*für footing*/
+    min-height: 100vh; /*für footing*/
+}
+.inhalt {
+    padding-bottom: 200px; /*muss größer als footing sein*/
 }
 /*alert*/
 .alert {
@@ -420,7 +424,8 @@ tr:nth-child(even) {
     padding: 10px;
 }
 .ende {
-    position: relative;
+    position: absolute; /*mit .inhalt padding bottom >= .ende hight in einem container und body position: relative*/
+    bottom: 0;
     background-color: #111;
     color: white;
     font-size: 14px;
