@@ -263,6 +263,7 @@ h2 { /*Modell*/
     .flexbox {
         flex-direction: column;
         padding:0px;
+        margin-right: 10px;
     }
     .minislide {
       width: 17%;
