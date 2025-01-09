@@ -1,0 +1,3 @@
+User-agent: *
+Dissallow:
+Sitemap: https://www.steinhorst-gitarren.de/sitemap.xml
