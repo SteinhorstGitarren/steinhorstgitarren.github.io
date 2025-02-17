@@ -168,7 +168,7 @@ a {
           display:block;
       }
   }
-h2 { /*Modell*/
+h1 { /*Modell*/
     font-size: 30px;
     text-align: center;
 }
@@ -337,7 +337,7 @@ h2 { /*Modell*/
   body{
       font-size: 12px;
   }
-  h2{
+  h1{
       font-size: 20px;
   }
   .desc {
