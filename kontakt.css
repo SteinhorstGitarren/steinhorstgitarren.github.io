@@ -25,6 +25,18 @@ body {
     opacity: 0.9;
     box-shadow: 30px 30px 20px #111;
 }
+.alert button {
+    background-color: #EFC44B;
+    border: 1px solid #111;
+    color: #111;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: inset 2px 2px 5px #111;
+    cursor: pointer;
+    margin: 4px;
+    font-size: large;
+  }
+  /*alert ende*/
 img { /*für onloasd fadein*/
     opacity: 0.1;
     -moz-transition: opacity 2s;
