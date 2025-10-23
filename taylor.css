@@ -1,0 +1,281 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    background-color: white;
+    color: #111;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    position: relative; /*für footing*/
+    min-height: 100vh; /*für footing*/
+  
+}
+img { /*für onloasd fadein*/
+    opacity: 0.1;
+    -moz-transition: opacity 2s;
+    -webkit-transition: opacity 2s;
+    -o-transition: opacity 2s;
+    transition: opacity 2s;
+}
+body.loaded img {
+    opacity: 1;
+}
+.inhalt {
+    padding-bottom: 200px; /*muss größer als footing sein*/
+}
+a:active, a:hover {
+    background-color: #98adc3;
+    color:#111;
+ }
+.icon {
+    opacity: 0.9;
+    align-items: center;
+    width: 50px;
+    color: #111;
+    background-color: #E5EAFA;
+    position: fixed;
+    right: 5px;
+    top: 5%;
+    z-index: 4;
+    border-radius: 10px;
+}
+.icon img {
+    width: 100%;
+}
+.icon2{
+    align-items: center;
+    width: 50px;
+    position: fixed;
+    right: 5px;
+    top: 20%;
+    z-index: 4;
+}
+.icon2 img {
+    width: 100%;
+}
+.icon3{
+    align-items: center;
+    width: 50px;
+    position: fixed;
+    right: 5px;
+    top: 35%;
+    z-index: 4;
+}
+.icon3 img {
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .icon{
+       width:40px;
+    }
+    .icon2{
+      width:40px;
+      top:15%;
+    }
+    .icon3{
+      width: 40px;
+      top: 27%;
+    }
+  } 
+  @media (max-width: 600px) {
+    .icon{
+       width:30px;
+    }
+    .icon2{
+      width:30px;
+      top:13%;
+    }
+    .icon3{
+      width: 30px;
+      top: 22%;
+    }
+  } 
+.dropdown {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    z-index: 3;
+}
+.dropbtn {
+    width: 100%;
+    position: relative;
+    display: none;
+    border: none;
+    padding: 10px;
+    color: #111;
+    font-size: 12;
+    background-color: #98adc3;
+    cursor: pointer;
+    box-shadow: inset 0px 10px 20px #E5DB8A;
+}
+.dropbtn:active, .dropbtn:hover {
+    background-color: #b7bcc0;
+}
+@media (max-width: 600px) {
+    .dropbtn { 
+        display: block;
+    }
+}
+.menubar { /*Menu-Bar*/
+    background-color: white;
+    opacity: 0.95;
+    list-style-type: none;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0;
+}
+.menubar li {
+    float: inline-start;
+    width: 20%;
+}
+a {
+    color: white;
+}
+.menulinks {
+    color:#111;
+    display: block;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+.menulinks:active, .menulinks:hover {
+    background-color: #111;
+    color: white;
+}
+@media (max-width: 600px) {
+    .menubar {
+        position: absolute; /*damit nicht weißer Hintergrund mit aufgeht*/
+        width: 100%;
+        display: none;
+        
+    }
+    .menubar li {
+        float: none;
+        width: 100%;
+    }
+    .show {
+        display:block;
+    }
+}
+.logo {
+    background-color: #111;
+}
+.name {
+    height: auto;
+    width: 500px;
+    max-width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.taylorlogo {
+    position: absolute;
+    width: 6%;
+    top: 100px;
+    left: 10px;
+}
+.background {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: -1;
+    border-bottom: 1000px solid #b11a1f; /*1000px und bottom 0px, um vollen Bildschirm zu füllen - 1000px ist hoch genug*/
+    border-right: 500px solid transparent;
+    height: 0px;
+    width: 10%;
+
+}
+.taylorbox {
+    display: flex;
+    align-items: start;
+    margin-top: 100px;
+
+}
+.taylortext {
+    margin-left: 7%;
+    max-width: 40%;
+}
+.taylortext h2 {
+    border: 2px solid black;
+    border-radius: 2px;
+}
+.taylortext p {
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: -3px 3px 3px black;
+}
+.taylortext p, h2 {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5)
+}
+.neckreset1  {
+    position: relative;
+    border: 2px solid black;
+    border-radius: 2px;
+    width: 45%;
+    rotate: -5deg;
+    box-shadow: -5px 5px 3px black;
+ 
+}
+.neckreset2 {
+position: relative;
+border: 2px solid black;
+border-radius: 2px;
+   width: 45%;
+   rotate: 7deg;
+   box-shadow: -7px 7px 5px black;
+}
+.taylorimages {
+    position: relative;
+    width: 45%;
+    top: 20px;
+    left: 5%;
+}
+@media (max-width: 768px) {
+    .taylorimages {
+        display: flex;
+        flex-direction: column;
+    } 
+    .neckreset1 {
+        width: 70%;
+    }
+    .neckreset2 {
+        width: 70%;
+    }
+    .taylorlogo {
+        width: 10%;
+    }
+}
+.ende {
+    position: absolute; /*mit .inhalt padding bottom >= .ende height in einem container und body position: relative*/
+    bottom: 0;
+    width: 100%;
+    background-color: #111;
+    color: white;
+    font-size: 14px;
+    text-align: left;
+    padding-top: 3px;
+    padding-bottom: 20px;
+}
+.ende div {
+    padding-left: 10px;
+}
+.links {
+    position: absolute;
+    right: 10px;
+    padding: 10px;
+    top: 5px;
+}
+.home_ende {
+   color: #EFC44B;
+}
+@media (max-width: 768px) { /*Schriftgröße kleiner für Tablets&Handys*/
+    body{
+        font-size: 12px;
+    }
+    .ende {
+        font-size: 9px;
+    }
+  }
