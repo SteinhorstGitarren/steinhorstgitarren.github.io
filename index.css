@@ -224,6 +224,13 @@ a {
     .show {
         display:block;
     }
+    .taylor {
+        opacity: 1;
+        position: absolute;
+        right: 33%;
+        top: 40%;
+        max-width: 37px;
+    }
 }
 .flexbox {
     margin: 0%;
@@ -503,4 +510,5 @@ tr:nth-child(even) {
         font-size: 9px;
     }
   }
+
 
