@@ -214,6 +214,13 @@ a {
     .show {
         display:block;
     }
+    .taylor {
+        opacity: 1;
+        position: absolute;
+        right: 33%;
+        top: 40%;
+        max-width: 37px;
+    }
 }
 h1 {
     font-size: 24px;
@@ -324,4 +331,5 @@ th {
         font-size: 9px;
     }
   }
+
 
