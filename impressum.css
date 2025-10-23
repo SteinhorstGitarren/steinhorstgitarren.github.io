@@ -219,6 +219,13 @@ a {
     .show {
         display:block;
     }
+    .taylor {
+        opacity: 1;
+        position: absolute;
+        right: 33%;
+        top: 40%;
+        max-width: 37px;
+    }
 }
 .ende {
     position: absolute; /*mit .inhalt padding bottom >= .ende hight in einem container und body position: relative*/
@@ -251,4 +258,5 @@ a {
         font-size: 9px;
     }
   }
+
 
