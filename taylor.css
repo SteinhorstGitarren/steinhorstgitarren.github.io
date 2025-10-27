@@ -10,8 +10,11 @@ body {
     box-sizing: border-box;
     position: relative; /*für footing*/
     min-height: 100vh; /*für footing*/
-  
-}
+    background-image: url(pictures_taylor/Taylor_background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    }
 img { /*für onloasd fadein*/
     opacity: 0.1;
     -moz-transition: opacity 2s;
@@ -170,23 +173,6 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
-.taylorlogo {
-    position: absolute;
-    width: 6%;
-    top: 100px;
-    left: 10px;
-}
-.background {
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    z-index: -1;
-    border-bottom: 1000px solid #b11a1f; /*1000px und bottom 0px, um vollen Bildschirm zu füllen - 1000px ist hoch genug*/
-    border-right: 500px solid transparent;
-    height: 0px;
-    width: 10%;
-
-}
 .taylorbox {
     display: flex;
     align-items: start;
@@ -244,9 +230,6 @@ border-radius: 2px;
     .neckreset2 {
         width: 70%;
     }
-    .taylorlogo {
-        width: 10%;
-    }
 }
 .ende {
     position: absolute; /*mit .inhalt padding bottom >= .ende height in einem container und body position: relative*/
@@ -278,4 +261,5 @@ border-radius: 2px;
     .ende {
         font-size: 9px;
     }
+
   }
