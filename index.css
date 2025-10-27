@@ -413,22 +413,6 @@ a {
     width: 90%;
     font-size: 20px;
 }
-.taylor2 {
-    text-decoration: none;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    position: relative;
-    background-color: #111;
-    padding: 10px;
-    left: 3%;
-}
-.taylor2 img {
-    position: relative;
-    width: 40px;
-    top: 10px;
-    
-
-}
 .preisliste {
     position: relative;
     background-color: #E5DB8A;
@@ -471,13 +455,32 @@ tr:nth-child(even) {
         font-size: 15px;
     }
 }
-.about {
+.endlinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 3%;
+}
+.taylor2 {
+    margin-bottom: 10px;
     text-decoration: none;
     border-radius: 25px;
-    position: relative;
     background-color: #111;
     padding: 10px;
-    left: 3%;
+    width: fit-content;
+}
+.taylor2 img {
+    position: relative;
+    width: 40px;
+    top: 10px;
+    margin-top: -20px;
+}
+.about {
+    width: fit-content;
+    text-decoration: none;
+    border-radius: 25px;
+    background-color: #111;
+    padding: 10px;
 }
 .ende {
     position: absolute; /*mit .inhalt padding bottom >= .ende hight in einem container und body position: relative*/
@@ -510,5 +513,6 @@ tr:nth-child(even) {
         font-size: 9px;
     }
   }
+
 
 
