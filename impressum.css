@@ -22,9 +22,6 @@ img { /*für onloasd fadein*/
 body.loaded img {
     opacity: 1;
 }
-.inhalt {
-    padding-bottom: 200px; /*muss größer als footing sein*/
-}
 a:active, a:hover {
     background-color: #98adc3;
     color:#111;
@@ -97,7 +94,6 @@ a:active, a:hover {
     padding: 20px;
     padding-top: 0px;
     padding-bottom: 200px; /*muss größer als footing sein*/
-    
 }
 .logobox, .werdegangbox, .nachhaltigkeitsbox {
     display: flex;
@@ -307,6 +303,7 @@ a {
         font-size: 9px;
     }
   }
+
 
 
 
