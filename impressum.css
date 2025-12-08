@@ -93,28 +93,97 @@ a:active, a:hover {
     }
   } 
 /*Für About*/
-.aboutbox {
+.inhalt {
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 200px; /*muss größer als footing sein*/
+    
+}
+.logobox, .werdegangbox, .nachhaltigkeitsbox {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.aboutlogo {
-    width: 35%;
+.logobox {
+    background-color: #111;
+    border: 5px solid #efc44b;
 }
-.aboutbox p {
+.werdegangbox {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nachhaltigkeitsbox {
+    justify-content: left;
+    margin-top: 50px;
+    background-image: url(about/Holz_nah2.jpeg);
+    background-size: cover;
+    margin-bottom: -50px;
+}
+.aboutlogo {
+    width: 200px;
+    padding: 5px;
+}
+.ladenimage {
+    flex: 50%;
+    max-width: 45%;
+    border: 8px solid #e5db8a;
+    border-style: groove;
+}
+.holzimage {
+    width: 20%;
+}
+.logobox p, .werdegangbox p, .nachhaltigkeitsbox p {
     margin-left: 20px;
     margin-right: 20px;
-    width: 50%;
+    width: 30%;
+    text-align: left;
+}
+.logobox p {
+    color: white;
+}
+.werdegangbox p {
+    flex: 29%;
+    max-width: 100%;
+}
+.nachhaltigkeitsbox p {
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px;
+} 
+.ladenimages {
+    flex: 65%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@media (max-width:1150px) {
+    .ladenimage {
+        flex: 100%;
+        max-width:60%;
+        margin: 10px;
+    }
+    .werdegangbox {
+        align-items: start;
+    }
 }
 @media (max-width:768px) {
-    .aboutbox {
+    .logobox {
         flex-direction: column;
     }
-    .aboutbox p {
+    .logobox p, .werdegangbox p, .nachhaltigkeitsbox p {
         width: 90%;  
     }
     .aboutlogo {
-        width: 50%;
+        width: 200px;
+        max-width: 40%;
+    }
+    .ladenimage {
+        max-width: 70%;
+        border-width: 3px;
+        margin: 3px;
     }
 }
 .logo {
@@ -238,6 +307,7 @@ a {
         font-size: 9px;
     }
   }
+
 
 
 
