@@ -442,6 +442,7 @@ tr:nth-child(even) {
     .repairvideo {
         flex-direction: column;
         border-radius: 20px;
+        margin-bottom: 70px;
     }
     video {
         width: 100%;
@@ -519,6 +520,7 @@ tr:nth-child(even) {
         font-size: 9px;
     }
   }
+
 
 
 
