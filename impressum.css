@@ -91,7 +91,8 @@ a:active, a:hover {
   } 
 /*Für About*/
 .inhalt {
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 0px;
     padding-bottom: 200px; /*muss größer als footing sein*/
 }
@@ -182,7 +183,8 @@ a:active, a:hover {
 }
 @media (max-width: 600px) {
     .inhalt {
-        padding: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
         padding-top: 20px;
         }
 }
@@ -307,6 +309,7 @@ a {
         font-size: 9px;
     }
   }
+
 
 
 
