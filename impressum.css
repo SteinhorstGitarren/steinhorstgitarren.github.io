@@ -119,6 +119,7 @@ a:active, a:hover {
 .aboutlogo {
     width: 200px;
     padding: 5px;
+    aspect-ratio: 1/1;
 }
 .ladenimage {
     flex: 50%;
@@ -309,6 +310,7 @@ a {
         font-size: 9px;
     }
   }
+
 
 
 
