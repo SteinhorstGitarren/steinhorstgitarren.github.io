@@ -360,7 +360,31 @@ a {
         max-width: 100%;
     }
 }
-.repairslide { /*slideshow Werkstatt*/
+.repairvideo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #111;
+    padding: 3%;
+    border-radius: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+video {
+    width: 60%;
+    aspect-ratio: 16/9;
+    border-radius: 30px;
+}
+.repairhead {
+    color: #ffffff;
+    text-align: center;
+    z-index: 2;
+    font-size: 30px;
+}
+/*.repairslide { /*slideshow Werkstatt*/ /*
     position: relative;
     width: 100%;
     text-align: center;
@@ -379,13 +403,7 @@ a {
   @keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
-}
-.repairhead {
-    color: #111;
-    text-align: center;
-    z-index: 2;
-    font-size: 30px;
-}
+} */
 .repairpitch { /*werkstatttext*/
     position: relative;
     text-align: left;
@@ -421,6 +439,14 @@ tr:nth-child(even) {
     margin-left: 3%;
 }
 @media (max-width: 768px) {
+    .repairvideo {
+        flex-direction: column;
+        border-radius: 20px;
+    }
+    video {
+        width: 100%;
+        border-radius: 15px;
+    }
     .repairhead {
         font-size: 20px;
     }
@@ -493,6 +519,7 @@ tr:nth-child(even) {
         font-size: 9px;
     }
   }
+
 
 
 
