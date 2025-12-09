@@ -1,8 +1,8 @@
 window.onload = function load() { //für onload fadein
   document.body.setAttribute("class", "loaded");
 }
-
-let slideIndex = 0;
+/* Slideshow vor Werkstattvideo*/
+/*let slideIndex = 0;
 showSlides();
 
 function showSlides() {
@@ -16,6 +16,7 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block"; 
   setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
+*/
 
 function mymenudrop() { //damit es beim klick ausgefahren wird
   document.getElementById("menu").classList.toggle("show");
@@ -32,3 +33,4 @@ window.onclick = function(event) { //damit es beim click irgendwo auf dem Bildsc
     }
   }
 }
+
