@@ -446,7 +446,7 @@ tr:nth-child(even) {
     }
     video {
         width: 100%;
-        border-radius: 15px;
+        border-radius: 5px;
     }
     .repairhead {
         font-size: 20px;
@@ -520,6 +520,7 @@ tr:nth-child(even) {
         font-size: 9px;
     }
   }
+
 
 
 
