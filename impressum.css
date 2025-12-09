@@ -172,7 +172,6 @@ a:active, a:hover {
         width: 90%;  
     }
     .aboutlogo {
-        width: 200px;
         max-width: 40%;
     }
     .ladenimage {
@@ -183,8 +182,9 @@ a:active, a:hover {
 }
 @media (max-width: 600px) {
     .inhalt {
+        padding: 10px;
         padding-top: 20px;
-    }
+        }
 }
 .logo {
     background-color: #111;
@@ -307,6 +307,7 @@ a {
         font-size: 9px;
     }
   }
+
 
 
 
