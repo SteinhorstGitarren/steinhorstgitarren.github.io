@@ -260,7 +260,7 @@ a {
     box-shadow: 0px 50px 100px  inset #111;
     font-size: 30px;
 }
-.karo3 { /*gespiegelte Gitarren*/
+/*.karo3 { /*gespiegelte Gitarren nicht mehr gebraucht, da zu Parlor Link geworden*/ /*
     text-align: center;
     text-decoration: none;
     flex: 32%;
@@ -273,7 +273,7 @@ a {
     overflow-y: hidden;
     box-shadow: 0px 10px 50px  inset #111;
     font-size: 25px;
-}
+}*/
 #ukehead {
     background-color: #E5DB8A;
     background-image: url(pictures_uke/uke_cut_holz2.png);
@@ -284,17 +284,24 @@ a {
 #erle {
     background-image: url(slideshow_uke_erle/erle_body_quadrat.jpg);
 }
-#gitarre {
+#oel {
+    background-image: url(slideshow_klassik_oel/oel_body_quadrat.jpg);
+}
+#tenor {
+    background-image: url(slideshow_tenor_nitro/tenor_body_quadrat.jpg);
+}
+/*#gitarre {
     background-image: url(pictures_gitarre/stahl_spiegelung_schatten2.2.png);
     background-color: #e5e5ab;
-}
+}*/ /*nicht mehr gebraucht, da Kachelbild zu Parlor Link wurde*/
 #parlor {
-    background-image: url(slideshow_stahl/stahl_body_quadrat.jpg);
+    background-image: url(pictures_gitarre/stahl_spiegelung_schatten2.2.png);
+    background-color: #7d8080;
 }
-.karotext3 { /*gespiegelte Gitarren*/
+/*.karotext3 { 
     text-align: center;
     margin-top: 75%;
-}
+} */
 .karotext2 { /*...Verwendung heimischer Hölzer*/
     text-align: left;
     margin-top: 10%;
@@ -339,12 +346,12 @@ a {
     .karotext2 {
         margin-left: 40%;
     }
-    .karo3 {
+    /*.karo3 {
         font-size: 15px;
         flex: 50%;
         max-width: 48%;
         order: 3;
-    }
+    }*/
 }
 @media (max-width: 600px) {
     .karolinks {
@@ -355,10 +362,10 @@ a {
         flex:100%;
         max-width: 100%;
     }
-    .karo3 {
+    /*.karo3 {
         flex: 100%;
         max-width: 100%;
-    }
+    }*/
 }
 .repairvideo {
     display: flex;
@@ -384,7 +391,7 @@ video {
     z-index: 2;
     font-size: 30px;
 }
-/*.repairslide { /*slideshow Werkstatt*/ /*
+/*.repairslide { /*slideshow Werkstatt durch Video ersetzt*/ /*
     position: relative;
     width: 100%;
     text-align: center;
@@ -520,7 +527,6 @@ tr:nth-child(even) {
         font-size: 9px;
     }
   }
-
 
 
 
