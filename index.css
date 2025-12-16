@@ -291,7 +291,7 @@ a {
     background-image: url(slideshow_tenor_nitro/tenor_body_quadrat.jpg);
 }
 #star2 {
-    background-image: url(slideshow_uke_star2/star2_back_quadrat.jpg);
+    background-image: url(slideshow_uke_star2/star2_back_quadrat.jpeg);
 }
 /*#gitarre {
     background-image: url(pictures_gitarre/stahl_spiegelung_schatten2.2.png);
@@ -530,6 +530,7 @@ tr:nth-child(even) {
         font-size: 9px;
     }
   }
+
 
 
 
